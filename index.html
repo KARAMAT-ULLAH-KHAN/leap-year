@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Oleo+Script:wght@400;700&family=Playwrite+IN:wght@100..400&family=Playwrite+TZ+Guides&display=swap" rel="stylesheet">
-    <style>
+   
+   <style>
         body{
             background-color: brown;
             margin: 0px;
@@ -67,7 +68,7 @@
             .heading{
             font-family: "Playwrite IN", serif;
             font-optical-sizing: auto;
-            font-size: 50px;
+            font-size: 30px;
             font-style: normal;
             color: aqua;
             margin: 0px;
@@ -101,7 +102,7 @@
         <img src="./logo.png" alt="" srcset="">
       </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         document.querySelector(".btn").addEventListener("click",function(){
             var year = document.querySelector(".year").value;
@@ -120,6 +121,7 @@
                 ans="Normal year";
             }
             document.querySelector(".heading").innerHTML=ans;
+            $(".heading").animate({fontSize:"60px"});
         });
         document.addEventListener("keypress",function (event){
             if(event.key==="Enter"){
